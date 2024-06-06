@@ -1,0 +1,25 @@
+Logging:
+  path: /opt/logs/app-collector/
+  file: app-collector.log
+  old_file: app-collector.log.{}
+  log_format: '%(asctime)s - %(levelname)s - %(message)s'
+  date_format: '%d-%b-%y %H:%M:%S'
+  file_mode: a
+
+DataBase:
+  host: 0.0.0.0
+  port: 5432
+  max_connections: 10
+  database_name: db-name
+  user: usr
+  password: <secret01>
+  usersa: sa
+  passwordsa: <secret02>
+
+ApiUrl:
+  janis: http://mockapi01/api/order/
+  vtex: http://mockapi02/api/oms/pvt/orders/
+  precodeLog: http://mockapi03/api/v1/order/orderLog
+  precodeOrderDate: http://mockapi04/api/v1/order/createOrderDate
+  ifoodMercado: https://mockapi05/api/v1/
+
